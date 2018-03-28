@@ -11,10 +11,11 @@
 <body>
 
   <!-- Sidebar (hidden by default) -->
-  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px"
+    id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-    <a href="#band" onclick= "directToBandPage()" class="w3-bar-item w3-button" id="bandLanding">Band Feedback</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="#band" onclick="directToBandPage()" class="w3-bar-item w3-button" id="bandLanding">Band Feedback</a>
+    <a href="#about" onclick="directToAbout()" class="w3-bar-item w3-button" id="aboutLanding">About</a>
   </nav>
 
   <!-- Top menu -->
@@ -31,20 +32,28 @@
     <!-- First Photo Grid-->
     <div class="w3-row-padding w3-padding-16 w3-center" id="bands">
       <div class="w3-quarter">
-        <img src="img/band1.jpg" alt="band1" style="width:100%">
+        <a href="#FTM" onclick="florenceFeed()" id="florenceFeed">
+          <img src="img/band1.jpg" alt="band1" style="width:100%">
+        </a>
         <h3>Florence + the Machine</h3>
       </div>
       <div class="w3-quarter">
-        <img src="img/band2.jpg" alt="band2" style="width:100%">
+        <a href="#TDCC" onclick="twoDoorFeed()" id="TDCCFeed">
+          <img src="img/band2.jpg" id="TDCCFeed" alt="band2" style="width:100%">
+        </a>
         <h3>Two Door Cinema Club</h3>
       </div>
-      <div class="w3-quarter">
-        <img src="img/band3.jpg" alt="band3" style="width:100%">
+      <div class="w3-quarter" id="WTMFeed">
+        <a href="#WTM" onclick="walkTheMoon()" id="WTMFeed">
+          <img src="img/band3.jpg" alt="band3" style="width:100%">
+        </a>
         <h3>Walk The Moon</h3>
       </div>
-      <div class="w3-quarter">
-        <img src="img/band4.jpg" alt="band4" style="width:100%">
-        <h3>Death Cab For Cutie</h3>
+      <div class="w3-quarter" id="DCFCFeed">
+        <a href="#DCFC" onclick="deathCabFeed()" id="deathCabFeed">
+          <img src="img/band4.jpg" alt="band4" style="width:100%">
+          </a>
+          <h3>Death Cab For Cutie</h3>
       </div>
     </div>
 
@@ -61,19 +70,6 @@
         <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
       </div>
     </div>
-
-    <hr id="about">
-
-    <!-- About Section -->
-    <div class="w3-container w3-padding-32 w3-center">
-      <h3>About Section</h3><br>
-      <div class="w3-padding-32">
-        <h4><b>Website stuff</b></h4>
-        <h6><i>What we are about</i></h6>
-        <p>Some stuff about the website</p>
-      </div>
-    </div>
-    <hr>
 
 
 

@@ -16,6 +16,12 @@ body, h1, h2, h3, h4, h5, h6 {
     width: calc(50% - 4px);
 }
 
+.aboutBandImg {
+     width: 1000px;
+    height: 2000px;
+   
+}
+
 @media screen and (min-width: 50em) {
     .column {
         width: calc(25% - 6px);
