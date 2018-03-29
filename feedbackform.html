@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- CSS files here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <title>Band Review</title>
+</head>
+
+<body>
+  <div class="">
+    <form data-band-review="form">
+      <label for="username">Name</label>
+      <input type="text" name="username" placeholder="Eric">
+
+      <label for="bandname">Name</label>
+      <input type="text" name="bandname" placeholder="Band x">
+
+      <label for="review">Review</label>
+      <textarea name="review" rows="8" cols="80" placeholder="This band is really great">
+    </textarea>
+
+      <label for="Rating">Rate</label>
+      <input type="number" name="rating" value="">
+
+      <!-- button -->
+      <button type="submit" class="btn btn-default"> Submit</button>
+    </form>
+  </div>
+  <!--All javascript here-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+  <script src="scripts/bandinterface.js" charset="utf-8"></script>
+  <script src="scripts/commentformhandler.js" charset="utf-8"></script>
+  <script src="scripts/feedbackmain.js" charset="utf-8"></script>
+</body>
+
+</html>
