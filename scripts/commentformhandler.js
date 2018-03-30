@@ -31,7 +31,7 @@
         console.log(item.name + ' has a value: ' + item.value);
       });
       //show what is the current data from the form
-      console.log(data);
+      // console.log(data);
       // when clicked, pass this in the callback to give access to other
       // function the data
       fn(data);

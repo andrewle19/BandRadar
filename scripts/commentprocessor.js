@@ -12,11 +12,12 @@ deployD bandreviews collections.
     this.pid = pid;
     this.db = db;
   }
-
+  // Send comment to the interface
   CommentProcessor.prototype.procComment = function(data) {
     console.log('Adding comment for '+ data.username);
-    console.log('With review: '+ data.review);
+    // console.log('With review: '+ data.review);
     this.db.add(data.bandname,data);
+
   };
   App.CommentProcessor = CommentProcessor;
   window.App = App;
