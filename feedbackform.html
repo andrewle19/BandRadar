@@ -28,16 +28,20 @@
       <button type="submit" class="btn btn-default"> Submit</button>
     </form>
   </div>
-  <div class="">
-    <form data-band-comment="form">
-
-    </form>
-  </div>
+  <div class="panel panel-default">
+      <div class="panel-body">
+        <h4>Comments:</h4>
+        <div data-band-comment="box">
+          <!-- Checklist will be dynamically created using jQuery-->
+        </div>
+      </div>
+    </div>
   <!--All javascript here-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+  <script src="scripts/commentformhandler.js" charset="utf-8"></script>
   <script src="scripts/bandinterface.js" charset="utf-8"></script>
   <script src="scripts/commentprocessor.js" charset="utf-8"></script>
-  <script src="scripts/commentformhandler.js" charset="utf-8"></script>
+  <script src="scripts/commentbox.js" charset="utf-8"></script>
     <script src="scripts/onload.js" charset="utf-8"></script>
   <script src="scripts/feedbackmain.js" charset="utf-8"></script>
 </body>

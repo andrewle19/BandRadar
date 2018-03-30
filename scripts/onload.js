@@ -17,20 +17,22 @@
 
     $.get(this.serverUrl, function(serverResponse) {
       // console.log('Printing serverResponse obj.');
-      // console.log(serverResponse);
-      // var CHECKLIST_SELECTOR = '[data-band-comment="form"]';
-      // var CheckList = App.CheckList;
-      // var list = new CheckList(CHECKLIST_SELECTOR);
+      console.log('Populating comment section: ');
+
+      var COMMENT_SELECTOR = '[data-band-comment="box"]';
+      var CommentBox = App.CommentBox;
+      var comment = new CommentBox(COMMENT_SELECTOR);
+
       for (var i = 0; i < serverResponse.length; i++) {
-        
+
         var bandInfo = {
           'bandname': serverResponse[i]['bandname'],
           'username': serverResponse[i]['username'],
           'review': serverResponse[i]['review'],
           'rating': serverResponse[i]['rating']
         };
-        // list.addRow.call(list, coffeorder);
-        console.log(bandInfo);
+        comment.addComment.call(comment, bandInfo);
+        console.log('reload - after addComment call');
       }
     });
   };
