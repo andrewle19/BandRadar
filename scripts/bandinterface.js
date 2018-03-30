@@ -41,6 +41,9 @@
       cb(serverResponse);
     });
   };
+
+
+
   /*remove funciont will call get() and pass a IIFE to process the response data
   from the server. The JSON object returned is then extracted of its id to be suppresed
   for DELETE request to the server
