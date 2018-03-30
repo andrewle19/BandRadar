@@ -10,12 +10,12 @@ Main.js should only be used to call modules that has specific functions
   //create an App instance to be used
 
   var App = window.App || {};
-  
+
   // Use App here to declare and instantiate prototypes to be used
   console.log("Printing contents of App: "+App);
 
   document.getElementById("bandLanding").onclick = function directToBandPage() {
-    window.location.href = "bandFeedback.html";
+    window.location.href = "feedbackform.html";
   };
 
   document.getElementById("aboutLanding").onclick = function directToAbout() {
