@@ -1,42 +1,17 @@
 /*
 {
 	"type": "Collection",
-	"properties": {
-		"bandname": {
-			"name": "bandname",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "bandname",
-			"order": 0
-		},
-		"username": {
-			"name": "username",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "username",
-			"order": 1
-		},
-		"review": {
-			"name": "review",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "review",
-			"order": 2
-		},
-		"rating": {
-			"name": "rating",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "rating",
-			"order": 3
-		}
-	}
+	"properties":
+		"bandname":
+		"username":
+		"review":
+		"rating":
 }
-		Luigi Note- I plan to use a backend that uses these properties
+    Programmer: Edgard Luigi Sanchez
+    Date: 3/29
+    Desc:
+      This script handles sending local data to the database
+      I plan to use a backend that uses these properties
 */
 (function() {
   'use strict';
@@ -60,13 +35,15 @@
     });
   };
 
-  // THIS IS NOT NEEDED CURRENTLY
-  // BandInterface.prototype.get = function(key, cb) {
-  //   $.get(this.serverUrl + '/' + key, function(serverResponse) {
-  //     // console.log('Printing serverResponse obj.');
-  //     cb(serverResponse);
-  //   });
-  // };
+  BandInterface.prototype.get = function(key, cb) {
+    $.get(this.serverUrl + '/' + key, function(serverResponse) {
+      // console.log('Printing serverResponse obj.');
+      cb(serverResponse);
+    });
+  };
+
+
+
   /*remove funciont will call get() and pass a IIFE to process the response data
   from the server. The JSON object returned is then extracted of its id to be suppresed
   for DELETE request to the server
