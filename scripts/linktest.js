@@ -6,6 +6,4 @@
     window.location.replace('')
   }
 
-
-
 })
