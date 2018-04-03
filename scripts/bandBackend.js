@@ -14,7 +14,7 @@
   }
 
   bandList.prototype.postdata = function (){
-    dpd.bands.post({name: document.getElementById("bandName").value, venue: document.getElementById("venue").value,description: document.getElementById("description").value, picture: document.getElementById("pictureURL").value });
+    dpd.bands.post({name: document.getElementById('bandName').value, venue: document.getElementById('venue').value,description: document.getElementById('description').value, picture: document.getElementById('pictureURL').value });
   };
 
   App.bandList = bandList;

@@ -19,45 +19,47 @@
         alert(error.message);
       } else {
         console.log(results);
-        //name = "L@gmail.com";
+        //name = 'L@gmail.com';
         //name = results[0].username;
         //console.log(name);
-      for (var i = 0; i < results.length; i++) {
-         var rowElement = new addBands(results[i]);
-         $('.bandpages').append(rowElement.$element);
-       }
+        for (var i = 0; i < results.length; i++) {
+          var rowElement = new addBands(results[i]);
 
+        }
       }
     });
-  //})
+    //})
     console.log('WE in carousel');
   }
 
-function addBands (band){
+  function addBands (band){
 
-    var $div = $("<div></div>",{
-      "class": "carousel-item",
-      "id": band.name
+    var $div = $('<div></div>',{
+      'class': 'carousel-item',
+      'id': band.name
     });
 
-    var $a = $("<a></a>", {
-      "id": "bandPage"
+    var $a = $('<a></a>', {
+      'id': 'bandPage'
     });
 
-var $img = $("<img></img>",{
-      "onclick": " location.assign('bandPage.html');",
-      "class":"d-block w-100",
+    var $img = $('<img></img>',{
+      'onclick': ' location.assign("bandPage.html");',
+      'class':'d-block w-100',
       src: band.picture,
-      "style":"width:100%"
+      'style':'width:100%'
     });
 
-$div.append($img);
-$div.append($a);
-$('#bandpages').append($div);
-
-}
-
+    $div.append($img);
+    $div.append($a);
+    $('#bandpages').append($div);
+    $('#dick').append('<h1>dick</h1>');
+  }
   fillCarousel();
+  $('#desc').append('<h1>dick</h1>');
+
+
+
 
   App.Carousel = Carousel;
   window.App = App;

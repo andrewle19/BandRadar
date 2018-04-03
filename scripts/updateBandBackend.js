@@ -1,5 +1,4 @@
 (function(window) {
-  "use strict";
   'use strict';
 var $ = window.jQuery;
 var BANDLIST_SELECTOR = '[data-coffee-order="form"]';
