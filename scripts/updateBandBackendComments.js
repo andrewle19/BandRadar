@@ -1,15 +1,15 @@
 (function(window) {
   'use strict';
 var $ = window.jQuery;
-var BANDLIST_SELECTOR = '[data-bandreview="form"]';
+var FEEDBACK_SELECTOR = '[data-comments="form"]';
 var App = window.App || {};
 var BandList = App.bandList;
-var bandlistHandler = new BandList(BANDLIST_SELECTOR);
+var feedbackHandler = new BandList(FEEDBACK_SELECTOR);
   // Use App here to declare and instantiate prototypes to be used
 
-  $('#bandform1').on('click', function() {
-    bandlistHandler.postdata();
-  });
 
+  $('#feedback').on('click', function() {
+    feedbackHandler.postcomment();
+  });
 
 })(window);

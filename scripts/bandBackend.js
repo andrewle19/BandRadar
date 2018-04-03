@@ -17,6 +17,14 @@
     dpd.bands.post({name: document.getElementById('bandName').value, venue: document.getElementById('venue').value,description: document.getElementById('description').value, picture: document.getElementById('pictureURL').value });
   };
 
+  bandList.prototype.postcomment = function () {
+    console.log("in post comment");
+    dpd.comments.post({
+      bandid: 55555,
+      username: document.getElementById('username').value,
+      review: document.getElementById('review').value,
+      rating: document.getElementById('rating').value })
+  };
   App.bandList = bandList;
   window.App = App;
 })(window);

@@ -14,21 +14,24 @@
   }
 
   function populatePage (){
-    dpd.bands.get({$fields: {description: 1}} , function(results, error) {
+    // grabs band id from url then strips the string of id=
+    var bandid = window.location.search.substring(1);
+
+    // querys through data base with specefic id
+    dpd.bands.get({id: bandid.substring(1)} , function(results, error) {
       if (error) {
         alert(error.message);
+        
       } else {
-        console.log(results[0].description);
-        //name = 'L@gmail.com';
-        //name = results[0].username;
-        //console.log(name);
-        $('#desc').append('<h2 class="subtitle">',results[0].description,'</h2>');
-        $('#desc').append('<h2 class="subtitle">Venue:',results[0].venue,'</h2>');
-        $('#desc').append('<h2 class="subtitle">' )
+        console.log(results);
+
+        // appending the information to the page
+        $('#bandname').append('<h1 class="title">'+ results.name + '</h1>');
+        $('#bandpic').append('<figure class ="image is-4by3"> <img src="'+results.picture+ '"></figure>');
+        $('#desc').append('<h2 class="subtitle">'+ results.description + '</h2>');
+        $('#desc').append('<h2 class="subtitle">Venue: '+results.venue+'</h2>');
       }
     });
-    //})
-
   }
 
 

@@ -32,6 +32,7 @@
     console.log('WE in carousel');
   }
 
+
   function addBands (band){
 
     var $div = $('<div></div>',{
@@ -43,10 +44,11 @@
       'id': 'bandPage'
     });
 
-    
+    var location = 'location.assign("bandPage.html?='+ band.id + '")';
     var $img = $('<img></img>',{
-      'onclick': locationMove(band),
+      'onclick': location,
       'class':'d-block w-100',
+      'id': band.id,
       src: band.picture,
       'style':'width:100%'
     });
