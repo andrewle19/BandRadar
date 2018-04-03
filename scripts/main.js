@@ -28,6 +28,8 @@ var bandlistHandler = new BandList(BANDLIST_SELECTOR);*/
     window.location.href = "about.html";
   };
 
+
+
   document.getElementById("florenceFeed").onclick = function florenceFeed() {
     window.location.href = "FlorenceFeedSite.html";
   };
