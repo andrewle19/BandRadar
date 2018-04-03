@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"bandid": {
+			"name": "bandid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "bandid",
+			"order": 0
+		},
+		"username": {
+			"name": "username",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "username",
+			"order": 1
+		},
+		"review": {
+			"name": "review",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "review",
+			"order": 2
+		},
+		"rating": {
+			"name": "rating",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "rating",
+			"order": 3
+		}
+	}
+}

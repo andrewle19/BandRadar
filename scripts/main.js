@@ -12,6 +12,11 @@ var $ = window.jQuery;
   // Use App here to declare and instantiate prototypes to be used
   console.log('Printing contents of App: '+App);
 
+
+  $('#returnToMainFromAbout').on('click', function() {
+    window.location.assign('index.html');
+  });
+
   $('#aboutLanding').on('click',function(){
     window.location.assign('about.html');
   });
@@ -22,6 +27,24 @@ var $ = window.jQuery;
   $('#bandPage').on('click',function(){
     window.location.assign('bandPage.html');
   });
+  $('#returnToMain').on('click', function() {
+    window.location.assign('index.html');
+  });
+
+  $('#returnToMainFromFeed').on('click', function() {
+    window.location.assign('index.html');
+  });
+
+  $('#returnToMainFromBand').on('click', function() {
+    window.location.assign('index.html');
+  });
+
+  $('#returnToMainFromAbout').on('click', function() {
+    window.location.assign('index.html');
+  });
+
+  
+  
 //
 //     document.getElementById('aboutLanding').onclick = function directToAbout() {
 //       window.location.href = 'about.html';

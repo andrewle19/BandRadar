@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "name",
+			"order": 0
+		},
+		"venue": {
+			"name": "venue",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "venue",
+			"order": 1
+		},
+		"description": {
+			"name": "description",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "description",
+			"order": 2
+		},
+		"picture": {
+			"name": "picture",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "picture",
+			"order": 3
+		}
+	}
+}
