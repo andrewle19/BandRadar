@@ -7,8 +7,9 @@ Main.js should only be used to call modules that has specific functions
 
 (function(window) {
   "use strict";
-  'use strict';/*
+  'use strict';
 var $ = window.jQuery;
+/*
 var BANDLIST_SELECTOR = '[data-coffee-order="form"]';*/
 var App = window.App || {};/*
 var BandList = App.bandList;
@@ -24,10 +25,13 @@ var bandlistHandler = new BandList(BANDLIST_SELECTOR);*/
   window.location.href = 'bandForm.html';
 };
 
+document.getElementById("bandPage").onclick = function bandFeed() {
+  window.location.href = "bandPage.html";
+};
+
   document.getElementById("aboutLanding").onclick = function directToAbout() {
     window.location.href = "about.html";
   };
-
 
 
   document.getElementById("florenceFeed").onclick = function florenceFeed() {
@@ -45,9 +49,9 @@ var bandlistHandler = new BandList(BANDLIST_SELECTOR);*/
   document.getElementById("deathCabFeed").onclick = function deathCabFeed() {
     window.location.href = "deathCabForCutie.html";
   };
-/*
-  $('#bandform1').on('click', function() {
-    bandlistHandler.postdata();
-});*/
+
+function bandFeed(){
+location.assign('bandPage.html');
+};
 
 })(window);

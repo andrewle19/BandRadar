@@ -22,28 +22,45 @@
         //name = "L@gmail.com";
         //name = results[0].username;
         //console.log(name);
-        /*for (var i = 0; i < results.length; i++) {
-          var rowElement = new addPicDom(results[i],results[i].username);
-          $(".bandpages").append(rowElement.$element);
-        }*/
+      for (var i = 0; i < results.length; i++) {
+         var rowElement = new addBands(results[i]);
+         $('.bandpages').append(rowElement.$element);
+       }
 
       }
     });
   //})
-    //$('#bandpages').append(template);
     console.log('WE in carousel');
   }
+
+function addBands (band){
+
+    var $div = $("<div></div>",{
+      "class": "carousel-item",
+      "id": band.name
+    });
+
+    var $a = $("<a></a>", {
+      "id": "bandPage"
+    });
+
+var $img = $("<img></img>",{
+      "onclick": " location.assign('bandPage.html');",
+      "class":"d-block w-100",
+      src: band.picture,
+      "style":"width:100%"
+    });
+
+$div.append($img);
+$div.append($a);
+$('#bandpages').append($div);
+
+}
+
+
 
   fillCarousel();
 
   App.Carousel = Carousel;
   window.App = App;
 })(window);
-
-//var template =
-/*
-"<div class='carousel-item'> \
-  <a href='#FTM' onclick='florenceFeed()' id='florenceFeed'>\
-  <img class='d-block w-100' src='img/band1.jpg' alt='band1' style='width:100%'>\
-</a>\
-</div> "*/
