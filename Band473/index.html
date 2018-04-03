@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<title>Band</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="stylesheets/styles.css">
+
+<body>
+
+  <!-- Sidebar (hidden by default) -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:10%;min-width:300px" id="mySidebar">
+    <a href="#band" onclick="directToMainPage()" class="w3-bar-item w3-button" id="mainLanding">Home</a>
+    <a href="#about" onclick="directToAbout()" class="w3-bar-item w3-button" id="aboutLanding">About</a>
+    <a href="#band" onclick="directToBandPage()" class="w3-bar-item w3-button" id="bandLanding">Band Feedback</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+  </nav>
+
+  <!-- Top menu -->
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1900px;margin:auto">
+      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+      <div class="w3-center w3-padding-16">Band Site</div>
+    </div>
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="bands">
+
+      <!--  testing the scroll  -->
+
+      <div class="w3-quarter" id="#FTM">
+        <a href="#FTM" onclick="florenceFeed()" id="florenceFeed">
+          <div class="detail-image-container">
+            <div class="detail-image-frame">
+              <img src="img/band1.jpg" alt="band1" class="detail-image" data-image-role="target" style="width:100%" id="img1">
+            </div>
+          </div>
+        </a>
+        <h3 class="detail-image-title" data-image-role="title" id="title1">Florence + the Machine</h3>
+      </div>
+
+      <div class="w3-quarter" id="#TDCC">
+        <a href="#TDCC" onclick="twoDoorFeed()" id="TDCCFeed">
+          <div class="detail-image-container">
+            <div class="detail-image-frame">
+              <img src="img/band2.jpg" alt="band2" class="detail-image" data-image-role="target" style="width:100%" id="img2">
+            </div>
+          </div>
+        </a>
+        <h3 class="detail-image-title" data-image-role="title" id="title2">Two Door Cinema Club</h3>
+      </div>
+
+      <div class="w3-quarter" id="#WTM">
+        <a href="#WTM" onclick="walkTheMoon()" id="WTMFeed">
+          <div class="detail-image-container">
+            <div class="detail-image-frame">
+              <img src="img/band3.jpg" alt="band3" class="detail-image" data-image-role="target" style="width:100%" id="img3">
+            </div>
+          </div>
+        </a>
+        <h3 class="detail-image-title" data-image-role="title" id="title3">Walk The Moon</h3>
+      </div>
+
+      <div class="w3-quarter" id="#DCFC">
+        <a href="#DCFC" onclick="deathCabFeed()" id="deathCabFeed">
+          <div class="detail-image-container">
+            <div class="detail-image-frame">
+              <img src="img/band4.jpg" alt="band4" class="detail-image" data-image-role="target" style="width:100%" id="img4">
+            </div>
+          </div>
+        </a>
+        <h3 class="detail-image-title" data-image-role="title" id="title4">Death Cab For Cutie</h3>
+      </div>
+      <!--  new bands go here -->
+        <div class="newBands" id="#NBT">
+          <a href="#NBT" onclick="nothingButThievesFeed()" id="nothingButThievesFeed">
+            <div class="detail-image-container">
+              <div class="detail-image-frame">
+                <img src="img/band5.jpg" alt="band5" class="detail-image" data-image-role="target" style="width:100%" id="img5">
+              </div>
+            </div>
+          </a>
+          <h3 class="detail-image-title" data-image-role="title" id="title5">Nothing But Thieves</h3>
+        </div>
+
+
+      <div class="newBands" id="#P">
+        <a href="#P" onclick="paramoreFeed()" id="paramoreFeed">
+          <div class="detail-image-container">
+            <div class="detail-image-frame">
+              <img src="img/band6.jpg" alt="band6" class="detail-image" data-image-role="target" style="width:100%" id="img6">
+            </div>
+          </div>
+        </a>
+        <h3 class="detail-image-title" data-image-role="title" id="title6">Paramore --------  Riot</h3>
+      </div>
+
+
+    <div class="newBands" id="#MCR">
+      <a href="#P" onclick="myChemicalRomanceFeed()" id="myChemicalRomanceFeed">
+        <div class="detail-image-container">
+          <div class="detail-image-frame">
+            <img src="img/band7.jpg" alt="band7" class="detail-image" data-image-role="target" style="width:100%" id="img7">
+          </div>
+        </div>
+      </a>
+      <h3 class="detail-image-title" data-image-role="title" id="title7">My Chemical Romance</h3>
+    </div>
+
+      <!--  end of the scroll test -->
+      <!-- original stuff
+      <div class="w3-quarter">
+        <a href="#FTM" onclick="florenceFeed()" id="florenceFeed">
+          <img src="img/band1.jpg" alt="band1" style="width:100%">
+        </a>
+        <h3>Florence + the Machine</h3>
+      </div>
+
+      <div class="w3-quarter">
+        <a href="#TDCC" onclick="twoDoorFeed()" id="TDCCFeed">
+          <img src="img/band2.jpg" alt="band2" style="width:100%">
+        </a>
+        <h3>Two Door Cinema Club</h3>
+      </div>
+
+
+
+      <div class="w3-quarter">
+        <a href="#WTM" onclick="walkTheMoon()" id="WTMFeed">
+          <img src="img/band3.jpg" alt="band3" style="width:100%">
+        </a>
+        <h3>Walk The Moon</h3>
+      </div>
+
+
+      <div class="w3-quarter">
+        <a href="#DCFC" onclick="deathCabFeed()" id="deathCabFeed">
+          <img src="img/band4.jpg" alt="band4" style="width:100%">
+          </a>
+        <h3>Death Cab For Cutie</h3>
+      </div>
+
+  -->
+    </div>
+
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <button id="left" onclick="reply_click(this.id)" class="w3-bar-item w3-button w3-hover-black">«</button>
+
+        <button id="right" onclick="reply_click(this.id)" class="w3-bar-item w3-button w3-hover-black">»</button>
+      </div>
+    </div>
+
+
+    <form>
+      <textarea name="comment" class="style-scope iron-autogrow-textarea" rows="1" autocomplete="off" required="" placeholder="Enter Feedback" maxlength="10000"></textarea>
+      <input type="submit">
+    </form>
+
+    <!-- End page content -->
+  </div>
+  <!--script src="scripts/datastore.js" charset="utf-8"></script-->
+  <script src="scripts/main.js" charset="utf-8"></script>
+  <script src="scripts/sidebar.js" charset="utf-8"></script>
+
+</body>
+
+</html>
