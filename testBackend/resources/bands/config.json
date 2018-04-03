@@ -1,36 +1,36 @@
 {
 	"type": "Collection",
 	"properties": {
-		"bandname": {
-			"name": "bandname",
+		"name": {
+			"name": "name",
 			"type": "string",
 			"typeLabel": "string",
-			"required": true,
-			"id": "bandname",
+			"required": false,
+			"id": "name",
 			"order": 0
 		},
-		"username": {
-			"name": "username",
+		"venue": {
+			"name": "venue",
 			"type": "string",
 			"typeLabel": "string",
 			"required": false,
-			"id": "username",
+			"id": "venue",
 			"order": 1
 		},
-		"review": {
-			"name": "review",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "review",
-			"order": 2
-		},
-		"rating": {
-			"name": "rating",
+		"description": {
+			"name": "description",
 			"type": "string",
 			"typeLabel": "string",
 			"required": false,
-			"id": "rating",
+			"id": "description",
+			"order": 2
+		},
+		"picture": {
+			"name": "picture",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "picture",
 			"order": 3
 		}
 	}
