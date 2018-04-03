@@ -7,16 +7,22 @@ Main.js should only be used to call modules that has specific functions
 
 (function(window) {
   "use strict";
-  //create an App instance to be used
-
-  var App = window.App || {};
-
+  'use strict';/*
+var $ = window.jQuery;
+var BANDLIST_SELECTOR = '[data-coffee-order="form"]';*/
+var App = window.App || {};/*
+var BandList = App.bandList;
+var bandlistHandler = new BandList(BANDLIST_SELECTOR);*/
   // Use App here to declare and instantiate prototypes to be used
   console.log("Printing contents of App: "+App);
 
   document.getElementById("bandLanding").onclick = function directToBandPage() {
     window.location.href = "feedbackform.html";
   };
+
+  document.getElementById("bandReq").onclick = function directToBandReq() {
+  window.location.href = 'bandForm.html';
+};
 
   document.getElementById("aboutLanding").onclick = function directToAbout() {
     window.location.href = "about.html";
@@ -37,5 +43,9 @@ Main.js should only be used to call modules that has specific functions
   document.getElementById("deathCabFeed").onclick = function deathCabFeed() {
     window.location.href = "deathCabForCutie.html";
   };
+/*
+  $('#bandform1').on('click', function() {
+    bandlistHandler.postdata();
+});*/
 
 })(window);

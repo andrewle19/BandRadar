@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="stylesheets/styles.css">
-
-
 <body>
 
   <!-- Sidebar (hidden by default) -->
   <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px"
     id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-    <a href="#band" onclick="directToBandPage()" class="w3-bar-item w3-button" id="bandLanding">Band Feedback</a>
-    <a href="#about" onclick="directToAbout()" class="w3-bar-item w3-button" id="aboutLanding">About</a>
+  <a href="#band" onclick="directToBandPage()" class="w3-bar-item w3-button" id="bandLanding">Band Feedback</a>
+  <a href="#band" onclick="directToBandReq()" class="w3-bar-item w3-button" id="bandReq">Band Request</a>
+  <a href="#about" onclick="directToAbout()" class="w3-bar-item w3-button" id="aboutLanding">About</a>
   </nav>
 
   <!-- Top menu -->
@@ -28,52 +28,51 @@
 
   <!-- !PAGE CONTENT! -->
   <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-
-    <!-- First Photo Grid-->
-    <div class="w3-row-padding w3-padding-16 w3-center" id="bands">
-      <div class="w3-quarter">
-        <a href="#FTM" onclick="florenceFeed()" id="florenceFeed">
-          <img src="img/band1.jpg" alt="band1" style="width:100%">
-        </a>
-        <h3>Florence + the Machine</h3>
-      </div>
-      <div class="w3-quarter">
-        <a href="#TDCC" onclick="twoDoorFeed()" id="TDCCFeed">
-          <img src="img/band2.jpg" alt="band2" style="width:100%">
-        </a>
-        <h3>Two Door Cinema Club</h3>
-      </div>
-      <div class="w3-quarter" id="WTMFeed">
-        <a href="#WTM" onclick="walkTheMoon()" id="WTMFeed">
-          <img src="img/band3.jpg" alt="band3" style="width:100%">
-        </a>
-        <h3>Walk The Moon</h3>
-      </div>
-      <div class="w3-quarter" id="DCFCFeed">
-        <a href="#DCFC" onclick="deathCabFeed()" id="deathCabFeed">
-          <img src="img/band4.jpg" alt="band4" style="width:100%">
-          </a>
-          <h3>Death Cab For Cutie</h3>
-      </div>
+    <!-- https://getbootstrap.com/docs/4.0/components/carousel/ -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#FTM" onclick="florenceFeed()" id="florenceFeed">
+      <img class="d-block w-100" src="img/band1.jpg" alt="band1" style="width:100%">
+    </a>
     </div>
+    <div class="carousel-item">
+      <a href="#TDCC" onclick="twoDoorFeed()" id="TDCCFeed">
+         <img class="d-block w-100" src="img/band2.jpg" alt="band2" style="width:100%">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#WTM" onclick="walkTheMoon()" id="WTMFeed">
+      <img class="d-block w-100" src="img/band3.jpg" alt="band3" style="width:100%">
+        </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 
     <!-- Pagination -->
-    <div class="w3-center w3-padding-32">
-      <div class="w3-bar">
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-      </div>
-    </div>
+
 
 3
 
     <!-- End page content -->
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="scripts/datastore.js" charset="utf-8"></script>
   <script src="scripts/main.js" charset="utf-8"></script>
   <script src="scripts/sidebar.js" charset="utf-8"></script>
