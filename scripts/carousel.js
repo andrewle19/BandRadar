@@ -23,7 +23,7 @@
         //name = results[0].username;
         //console.log(name);
         for (var i = 0; i < results.length; i++) {
-          var rowElement = new addBands(results[i]);
+          addBands(results[i]);
 
         }
       }
@@ -43,8 +43,9 @@
       'id': 'bandPage'
     });
 
+    
     var $img = $('<img></img>',{
-      'onclick': ' location.assign("bandPage.html");',
+      'onclick': locationMove(band),
       'class':'d-block w-100',
       src: band.picture,
       'style':'width:100%'
@@ -53,10 +54,8 @@
     $div.append($img);
     $div.append($a);
     $('#bandpages').append($div);
-    $('#dick').append('<h1>dick</h1>');
   }
   fillCarousel();
-  $('#desc').append('<h1>dick</h1>');
 
 
 
