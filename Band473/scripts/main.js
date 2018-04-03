@@ -31,22 +31,27 @@ function setDetails(imagePos) {
   heading1 = imagePos;
 
 
+  //document.getElementById("MyElement").className = "MyClass"
+  //document.getElementById("flor1").className = "newBands";
+
+  token = checkScroll(imagePos - 1, imagePos);
+  document.getElementById(headArray[token]).className="newBands";
+
+
+  //document.getElementById("#NBT").className = "w3-quarter";
+  token = checkScroll(imagePos + 3, imagePos);
+  document.getElementById(headArray[token]).className = "w3-quarter";
+  //test3 = token;
+
+  /*
   var myFeed = document.getElementById("img1");
   myFeed.src = pictures[imagePos];
   var myTitle = document.getElementById("title1");
   myTitle.textContent = titles[imagePos];
-
-  //document.getElementById("MyElement").className = "MyClass"
-  //document.getElementById("flor1").className = "newBands";
-  //token = checkScroll(imagePos - 1, imagePos);
-  //document.getElementById(headArray[token]).className="newBands";
+  //document.getElementById("florenceFeed").onclick = function twoDoorFeed();
 
 
-  //document.getElementById("#NBT").className = "w3-quarter";
-  //token = checkScroll(imagePos + 3, imagePos);
-  //document.getElementById(headArray[token]).className = "w3-quarter";
-  //test3 = token;
-  
+
   var myFeed2 = document.getElementById("img2");
   var myTitle2 = document.getElementById("title2");
   token = checkScroll(imagePos + 1, imagePos);
@@ -66,7 +71,7 @@ function setDetails(imagePos) {
   myFeed4.src = pictures[token];
   myTitle4.textContent = titles[token];
 
-
+*/
 }
 
 function getThumbnailsArray() {
