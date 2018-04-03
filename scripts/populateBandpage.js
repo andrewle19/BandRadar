@@ -22,10 +22,10 @@
         //name = "L@gmail.com";
         //name = results[0].username;
         //console.log(name);
-      for (var i = 0; i < results.length; i++) {
-         var rowElement = new addBands(results[i]);
-         $('.bandpages').append(rowElement.$element);
-       }
+        for (var i = 0; i < results.length; i++) {
+          var rowElement = new addBands(results[i]);
+          $('.bandpages').append(rowElement.$element);
+        }
 
       }
     });
@@ -56,6 +56,8 @@ $div.append($a);
 $('#bandpages').append($div);
 
 }
+
+
 
   fillCarousel();
 
