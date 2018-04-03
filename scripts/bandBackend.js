@@ -19,8 +19,9 @@
 
   bandList.prototype.postcomment = function () {
     console.log("in post comment");
+    console.log(window.location.search.substring(1));
     dpd.comments.post({
-      bandid: 55555,
+      bandid: window.location.search.substring(2),
       username: document.getElementById('username').value,
       review: document.getElementById('review').value,
       rating: document.getElementById('rating').value })

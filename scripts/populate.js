@@ -21,7 +21,7 @@
     dpd.bands.get({id: bandid.substring(1)} , function(results, error) {
       if (error) {
         alert(error.message);
-        
+
       } else {
         console.log(results);
 
@@ -33,9 +33,38 @@
       }
     });
   }
+  function populateComments() {
+    // <p>
+    //   <strong>@username</strong>
+    //   <small>Rating: 5/5</small>
+    //   <br>
+    //   this band is really awesome everyone should go see them live
+    // </p>
+    var commentBandid = window.location.search.substring(1);
+    // querys through data base with specefic id
+    dpd.comments.get({bandid: commentBandid.substring(1)} , function(results, error) {
+      if (error) {
+        alert(error.message);
+
+      } else {
+        console.log(results);
+
+        // appending the information to the page
+        for(var i = 0; i < results.length;i++){
+          $('#commentfeed').append('<p> <strong>@'+results[i].username+'</strong>'
+        +'<small> Rating: '+ results[i].rating + '</small><br>'+ results[i].review + '</p>');
+        }
+
+      }
+    });
+
+  }
+
+
 
 
   populatePage();
+  populateComments();
 
 
   App.Populate = Populate;

@@ -12,4 +12,10 @@ var feedbackHandler = new BandList(FEEDBACK_SELECTOR);
     feedbackHandler.postcomment();
   });
 
+  $('#goBack').on('click', function() {
+    window.history.back();
+  });
+
+
+
 })(window);
