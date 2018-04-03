@@ -9,8 +9,9 @@
 
 
   $('#feedback').on('click', function() {
+    var bandid = window.location.search.substring(1);
     feedbackHandler.postcomment();
-    $('#feedbackForm')[0].reset();
+    window.location.assign('bandPage.html?='+bandid.substring(1));
   });
 
   $('#back').on('click',function(){
