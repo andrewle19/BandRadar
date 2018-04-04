@@ -2,12 +2,12 @@
 
 ###### Comment
 Project Website Made by: 
-Le,Andrew David
-Fratzke,Eric Christopher
-Moreno,David
-Sahoo,Swati
-Sanchez,Edgard L. A.
-Vega,Jonathan Michael
+Andrew David Le, 
+Eric Christopher Fratzke,
+David Moreno,
+Swati Sahoo,
+Edgard L. A. Sanchez,
+Jonathan Michael Vega
 
 The main html and script for the feature comment is feedbackform.html and feedback.js
 
