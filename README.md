@@ -1,5 +1,8 @@
 ### Project 1 Band Feedback
 
+###### Scope
+The website's scope is to provide direct feedback for recent Band Performances. The user can write up reviews from a past band performance. The users can see other users reviews of other band performances. 
+
 ###### Comment
 Project Website Made by: 
 Andrew David Le, 
