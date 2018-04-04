@@ -19,9 +19,6 @@
         alert(error.message);
       } else {
         console.log(results);
-        //name = 'L@gmail.com';
-        //name = results[0].username;
-        //console.log(name);
         for (var i = 0; i < results.length; i++) {
           addBands(results[i]);
 
