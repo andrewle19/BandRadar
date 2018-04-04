@@ -14,7 +14,7 @@
   }
 
   function fillCarousel (){
-    dpd.bands.get({$fields: {picture: 1}} , function(results, error) {
+    dpd.bands.get({} , function(results, error) {
       if (error) {
         alert(error.message);
       } else {
@@ -39,6 +39,8 @@
       'class': 'carousel-item',
       'id': band.name
     });
+    var caption = '<div class="carousel-caption"> <h1 class="title is-1 has-text-white-bis">'+ band.name +'</h1></div>';
+
 
     var $a = $('<a></a>', {
       'id': 'bandPage'
@@ -55,7 +57,9 @@
 
     $div.append($img);
     $div.append($a);
+    $div.append(caption);
     $('#bandpages').append($div);
+
   }
   fillCarousel();
 

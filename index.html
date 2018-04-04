@@ -11,46 +11,63 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
 <body>
 
-  <!-- Sidebar (hidden by default) -->
-  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px"
-    id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#band" onclick="directToBandReq()" class="w3-bar-item w3-button" id="bandReq">Band Request</a>
-  <a href="#about" onclick="directToAbout()" class="w3-bar-item w3-button" id="aboutLanding">About</a>
-  </nav>
 
-  <!-- Top menu -->
-  <div class="w3-top">
-    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-      <div class="w3-center w3-padding-16">Decent Band Site</div>
+  <section class="hero is-default is-bold">
+    <div class="hero is-info ">
+     <nav class="navbar is-info">
+       <div class="container is-info">
+         <div class="navbar-brand">
+           <a class="navbar-item">
+             <h1 class="subtitle">Band Radar</h1>
+           </a>
+         </div>
+         <div id="navbarMenu" class="navbar-menu">
+           <div class="navbar-end">
+             <a class="navbar-item" href="bandForm.html">Add Your Band</a>
+             <a class="navbar-item" href="about.html">About</a>
+           </div>
+         </div>
+       </div>
+     </nav>
+   </div>
+
+
+
+    <div class="hero-body">
+        <div class="container has-text-centered ">
+
+        <div id="carouselExampleIndicators" style="width: 800px; height: 800px" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" id="bandpages">
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                  <h1 class="title is-1 has-text-white">Band Radar</h1>
+                </div>
+              <a>
+                <img src="http://3.bp.blogspot.com/-8hlNavxtVDQ/VD8c5Eqb7oI/AAAAAAAAHZI/CYhXK3VZSjk/s1600/concert-crowd.jpg">
+              </a>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
     </div>
-  </div>
-
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-    <!-- https://getbootstrap.com/docs/4.0/components/carousel/ -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-  <div class="carousel-inner" id="bandpages">
-    <div class="carousel-item active">
-      <figure class="image is-4by3">
-      <a>
-      <img src="img/feedback-matters.jpg">
-      </a>
-      </figure>
+    <div class="hero-footer">
+      <p>penis</p>
     </div>
-  </div>
 
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+  </section>
+
+
+
 
 
     <!-- Pagination -->
@@ -59,7 +76,6 @@
 
 
     <!-- End page content -->
-  </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -7,8 +7,12 @@
   var bandlistHandler = new BandList(BANDLIST_SELECTOR);
   // Use App here to declare and instantiate prototypes to be used
 
-  $('#bandform1').on('click', function() {
+  $('#bandformButton').on('click', function() {
     bandlistHandler.postdata();
+  });
+
+  $('#back').on('click', function() {
+    window.location.assign('index.html');
   });
 
 
