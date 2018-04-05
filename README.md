@@ -16,13 +16,27 @@ The main html and script for the feature comment is feedbackform.html and feedba
 
 To run this website you need to run the backend first of the deployd database than run browsersync to get the webpage up and running.
 
-To run back-end:
-cd to ./commentReview-backend folder
 
-run $ dpd -d
+Install node.js
+$ curl -s -L http://git.io/n-install | bash -s -- -y
+$ . $HOME/.bashrc
+$ npm update -g
 
-To run Browser-Sync
-cd to Band473 folder
+
+Install MongoDB and Deployd.
+If you are using the Ubuntu MATE VM and have completed Homework 0, you should already have an updated version of Node.js installed. Use the following shell commands:
+$ sudo apt update
+$ sudo apt install -y mongodb
+$ sudo systemctl stop mongodb
+$ sudo systemctl disable mongodb
+$ npm install deployd-cli -g
+
+
+Create a new Deployd app for commentReview-backend and open the dashboard:
+$ dpd create commentReview-backend
+$ cd commentReview-backend
+$ dpd -d
+
 
 run $ browser-sync start --server --files "stylesheets/*.css, .html, scripts/.js"
 
