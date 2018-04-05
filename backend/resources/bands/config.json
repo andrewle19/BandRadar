@@ -5,7 +5,7 @@
 			"name": "name",
 			"type": "string",
 			"typeLabel": "string",
-			"required": false,
+			"required": true,
 			"id": "name",
 			"order": 0
 		},
