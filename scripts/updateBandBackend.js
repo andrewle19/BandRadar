@@ -9,6 +9,7 @@
 
   $('#bandformButton').on('click', function() {
     bandlistHandler.postdata();
+    window.location.assign('index.html');
   });
 
   $('#back').on('click', function() {

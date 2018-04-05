@@ -16,9 +16,9 @@
     <a href="#band" onclick="directToBandReq()" class="w3-bar-item w3-button" id="bandReq">Band Request</a>
     <a href="#about" onclick="directToAbout()" class="w3-bar-item w3-button" id="aboutLanding">About</a>
   </nav>
-  <form data-bandreview="form">
+  <div class="container is-fluid">
+    <form data-bandreview="form">
 
-    <div class="container is-fluid">
       <!-- Sidebar (hidden by default) -->
 
       <div class="field">
@@ -38,7 +38,7 @@
       <div class="field">
         <label class="label">Description </label>
         <div class="control">
-          <textarea class="textarea" id="description" placeholder="Details about the performace" name="Description"></textarea>
+          <textarea class="textarea" id="description" placeholder="Details about Performance/Type of Feedback you want/" name="Description"></textarea>
         </div>
       </div>
 
@@ -49,23 +49,20 @@
         </div>
       </div>
 
-      <div class="control">
-        <button class="button is-link" id="bandformButton">Submit</button>
-        <button class="button is-link" id="back">Go Back</button>
-      </div>
 
-
+    </form>
+    <br>
+    <div class="control">
+      <button class="button is-link" id="bandformButton">Submit</button>
+      <button class="button is-link" id="back">Go Back</button>
     </div>
+  </div>
+  <!--All javascript here-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+  <script src="http://localhost:2403/dpd.js" type="text/javascript"></script>
+  <script src="scripts/bandBackend.js" charset="utf-8"></script>
+  <script src="scripts/updateBandBackend.js" charset="utf-8"></script>
 
-    <!--All javascript here-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
-    <script src="http://localhost:2403/dpd.js" type="text/javascript"></script>
-    <script src="scripts/bandBackend.js" charset="utf-8"></script>
-    <script src="scripts/updateBandBackend.js" charset="utf-8"></script>
-
-
-
-  </form>
 </body>
 
 </html>

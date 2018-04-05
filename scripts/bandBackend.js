@@ -12,13 +12,14 @@
       throw new Error('Could not find element with selecter ' + selector);
     }
   }
-
+  // functions posts the band data to the backend
   bandList.prototype.postdata = function (){
     dpd.bands.post({name: document.getElementById('bandName').value, venue: document.getElementById('venue').value,description: document.getElementById('description').value, picture: document.getElementById('pictureURL').value });
   };
 
+  // function posts the comments to the backend
   bandList.prototype.postcomment = function () {
-    console.log("in post comment");
+    console.log('in post comment');
     console.log(window.location.search.substring(1));
     dpd.comments.post({
       bandid: window.location.search.substring(2),

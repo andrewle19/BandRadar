@@ -13,6 +13,7 @@
     }
   }
 
+  // populates the band page based on the bandid clicked on from carousel
   function populatePage (){
     // grabs band id from url then strips the string of id=
     var bandid = window.location.search.substring(1);
@@ -33,6 +34,8 @@
       }
     });
   }
+
+  // function populates the dom with comments by first searching db with bandid
   function populateComments() {
     // <p>
     //   <strong>@username</strong>

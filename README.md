@@ -1,16 +1,16 @@
 ### Project 1 Band Feedback
 
 ###### Scope
-The website's scope is to provide direct feedback for recent Band Performances. The user can write up reviews from a past band performance. The users can see other users reviews of other band performances. 
+The website's scope is to provide direct feedback for recent Band Performances. The user can write up reviews from a past band performance. The users can see other users reviews of other band performances.
 
-The purpose for this project is to create a simple and easy webpage for bands to use for 
+The purpose for this project is to create a simple and easy webpage for bands to use for
 their fans/critics to voice their opinions of their performance.
 
 This project was designed to give us experience in creating a webpage with a team
 
 The overall goal for BandRadar is to create a website for bands
 This website will allow pictures of each band.
-A description section for describing the band, the memember, the name, where they are located, and 
+A description section for describing the band, the member, the name, where they are located, and
 what ever else the band wants people to know about them.
 
 There will be a way to navigate the pages of the website by clicking on the band's thumbnail.
@@ -25,8 +25,8 @@ the website cannot look like something from the 90s! Need to make it look good.
 
 
 ###### Comment
-Project Website Made by: 
-Andrew David Le, 
+Project Website Made by:
+Andrew David Le,
 Eric Christopher Fratzke,
 David Moreno,
 Swati Sahoo,
@@ -70,12 +70,10 @@ $ cd backend
 
 $ dpd -d
 
-Use the Deployd dashboard to create a Collection for backend. 
+Use the Deployd dashboard to create a Collection for backend.
 
 Open Terminal and locate folder "BandRadar"
 
 $ browser-sync start --server --files "stylesheets/*.css, .html, scripts/.js"
 
 This opens the project on your default Browser
-
-

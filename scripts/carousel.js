@@ -12,7 +12,7 @@
       throw new Error('Could not find element with selecter ' + selector);
     }
   }
-
+  // fills the carousels by getting all the band data in the data base
   function fillCarousel (){
     dpd.bands.get({} , function(results, error) {
       if (error) {
@@ -29,7 +29,7 @@
     console.log('WE in carousel');
   }
 
-
+  // Function adds band data to the dom
   function addBands (band){
 
     var $div = $('<div></div>',{
@@ -58,6 +58,7 @@
     $('#bandpages').append($div);
 
   }
+  
   fillCarousel();
 
 
