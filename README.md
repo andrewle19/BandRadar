@@ -51,14 +51,10 @@ $ dpd -d
 
 Use the Deployd dashboard to create a Collection for backend. 
 
-Open Terminal
-
-cd Band473
+Open Terminal and locate folder "BandRadar"
 
 $ browser-sync start --server --files "stylesheets/*.css, .html, scripts/.js"
 
-To open feedback form:
-
-localhost:3000/feedbackform.html
+This opens the project on your default Browser
 
 
