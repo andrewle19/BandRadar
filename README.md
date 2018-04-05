@@ -19,8 +19,13 @@ To run this website you need to run the backend first of the deployd database th
 ###################################
 
 Install node.js
+
+
 $ curl -s -L http://git.io/n-install | bash -s -- -y
+
+
 $ . $HOME/.bashrc
+
 $ npm update -g
 
 
