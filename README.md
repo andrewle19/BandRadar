@@ -20,35 +20,45 @@ To run this website you need to run the backend first of the deployd database th
 
 Install node.js
 
-
 $ curl -s -L http://git.io/n-install | bash -s -- -y
-
 
 $ . $HOME/.bashrc
 
 $ npm update -g
 
 
+
 Install MongoDB and Deployd.
-If you are using the Ubuntu MATE VM and have completed Homework 0, you should already have an updated version of Node.js installed. Use the following shell commands:
+
 $ sudo apt update
+
 $ sudo apt install -y mongodb
+
 $ sudo systemctl stop mongodb
+
 $ sudo systemctl disable mongodb
+
 $ npm install deployd-cli -g
 
 
 Create a new Deployd app for backend and open the dashboard:
+
 $ dpd create backend
+
 $ cd backend
+
 $ dpd -d
+
 Use the Deployd dashboard to create a Collection for backend. 
 
 Open Terminal
+
 cd Band473
+
 $ browser-sync start --server --files "stylesheets/*.css, .html, scripts/.js"
 
 To open feedback form:
+
 localhost:3000/feedbackform.html
 
 
