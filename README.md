@@ -3,6 +3,27 @@
 ###### Scope
 The website's scope is to provide direct feedback for recent Band Performances. The user can write up reviews from a past band performance. The users can see other users reviews of other band performances. 
 
+The purpose for this project is to create a simple and easy webpage for bands to use for 
+their fans/critics to voice their opinions of their performance.
+
+This project was designed to give us experience in creating a webpage with a team
+
+The overall goal for BandRadar is to create a website for bands
+This website will allow pictures of each band.
+A description section for describing the band, the memember, the name, where they are located, and 
+what ever else the band wants people to know about them.
+
+There will be a way to navigate the pages of the website by clicking on the band's thumbnail.
+There will be a way to go back to the home page from wherever we are in the website.
+There will need to be a backend for storing information on the band
+The website needs to incorporate a comments section for the users to write into.
+The comments need to be stored in the backend and loaded to the apprpriate pages.
+
+The website needs to easily add new bands to the list.
+the website cannot look like something from the 90s! Need to make it look good.
+
+
+
 ###### Comment
 Project Website Made by: 
 Andrew David Le, 
