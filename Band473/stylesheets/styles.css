@@ -1,0 +1,51 @@
+body, h1, h2, h3, h4, h5, h6{
+  font-family: "Karma", sans-serif;
+}
+
+.w3-bar-block .w3-bar-item {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+}
+
+.aboutBandBody {
+  margin-top: 80px;
+  margin-left: 100px;
+  height: 200px;
+}
+
+.aboutBandImg {
+  margin-left: 100px;
+  width: 1000px;
+  height: 400px;
+}
+
+.bandFeedbackBody {
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+.bandPage {
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+@media screen and (min-width: 50em) {
+  .column {
+    width: calc(25% - 6px);
+  }
+
+.newBands {
+  display: none;
+}
+}
